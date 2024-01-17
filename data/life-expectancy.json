@@ -36,7 +36,7 @@
 	},
 	"tables": [
 		{
-			"url": "https://platform-prototype.vercel.app/publication/example/dataset/life-expectancy/life-expectancy-by-region-sex-and-time.csv",
+			"url": "life-expectancy.csv",
 
 			"tableSchema": {
 				"@id": "#datacube/structure",

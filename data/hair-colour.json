@@ -76,7 +76,7 @@
 	],
 	"tables": [
 		{
-			"url": "https://platform-prototype.vercel.app/publication/example/dataset//my-dataset/my-dataset.csv",
+			"url": "hair-colour.csv",
 			"tableSchema": {
 				"columns": [
 					{
