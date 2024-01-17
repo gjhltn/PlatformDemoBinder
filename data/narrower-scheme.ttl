@@ -1,0 +1,70 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix : <http://example.org/> .
+
+:narrower-scheme a skos:ConceptScheme ;
+rdfs:comment "This (example) concept scheme describes a tree, using skos:narrower, ie with nodes which are multiply connected, the colours of hair. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec ante ultricies, convallis diam et, consectetur orci. Etiam ac orci sed tortor lacinia tristique at at augue. In in tristique purus, sed rhoncus dui. Vestibulum vehicula aliquam orci, ut pretium eros malesuada vel. Curabitur eget porttitor urna. Ut hendrerit volutpat ex, tempus semper arcu malesuada ac. Proin leo augue, viverra ac posuere eget, auctor ut turpis. Sed egestas eros sit amet elit ultricies porta. Suspendisse dolor nunc, rutrum ut varius at, gravida eu felis. Nullam dictum purus eu enim vestibulum auctor. Phasellus purus ex, commodo at nunc quis, fermentum gravida velit. Pellentesque vel urna at justo luctus aliquam. Nunc eget bibendum nisi. Etiam vitae dolor fermentum, porttitor enim sed, varius enim. Aenean a ultrices lacus.";
+  
+    rdfs:label "Example concept scheme: tree".
+
+:narrower-scheme skos:hasTopConcept :top0, :top1, :top1-1, :top2 .
+
+:top0
+    rdfs:label "A [0]";
+	rdfs:comment "Lorem ipsum dolor sit amet si melioram dies vina pometata reddit. Nam slottoj sed iste et duodum.";
+    skos:inScheme :narrower-scheme ;
+    skos:narrower :child0-0, :child0-1 .
+
+    :child0-0
+		rdfs:label "B [0][0]";
+        skos:inScheme :narrower-scheme .
+
+    :child0-1
+	    rdfs:label "C [0][1]";
+        skos:inScheme :narrower-scheme .
+
+
+
+:top1
+    rdfs:label "D [1]";
+    skos:inScheme :narrower-scheme ;
+    skos:narrower :child1-0 .
+
+    :child1-0
+        skos:inScheme :narrower-scheme ;
+		rdfs:label "E [1][0]";
+		rdfs:comment "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque leo sed neque placerat, ac viverra augue pellentesque. Sed at lacus id diam porttitor dignissim. Duis vel maximus augue. Vestibulum elementum odio finibus elit consectetur laoreet. Vivamus bibendum quis erat et tincidunt. Fusce purus erat, bibendum nec dapibus vel, efficitur vel ligula. Maecenas lobortis massa vel tortor porttitor auctor. Mauris metus nisi, tristique ut tellus vel, scelerisque ultricies tortor. Donec tincidunt vestibulum justo eget luctus. Pellentesque non posuere enim. Suspendisse at dignissim dui. Maecenas sollicitudin, nisi nec hendrerit vehicula, nulla nulla efficitur ipsum, quis varius sem est sed tellus.";
+        skos:narrower :child1-0-0, :child1-0-1 .
+
+        :child1-0-0 
+		 	rdfs:label "F [1][0][0]";
+			skos:inScheme :narrower-scheme .
+
+        :child1-0-1 
+			rdfs:label "G [1][0][1]";
+			skos:inScheme :narrower-scheme .
+
+:top1-1
+    rdfs:label "H [2]";
+    skos:inScheme :narrower-scheme .
+
+
+:top2
+    rdfs:label "I [3]";
+    skos:inScheme :narrower-scheme ;
+    skos:narrower :child2-0, :child2-1 .
+
+    :child2-0
+		  rdfs:label "J [3][0]";
+          skos:inScheme :narrower-scheme .
+
+    :child2-1
+		  rdfs:label "K [3][1]";
+          skos:inScheme :narrower-scheme ;
+          skos:narrower :child2-1-0 .
+
+        :child2-1-0
+		   rdfs:label "L [3][1][0]";
+           skos:inScheme :narrower-scheme .
