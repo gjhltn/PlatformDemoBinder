@@ -2,11 +2,11 @@
 
 ## Python
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gjhltn/PlatformDemoBinder/HEAD?labpath=life-expectancy.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gjhltn/PlatformDemoBinder/HEAD?labpath=python/life-expectancy.ipynb)
 
 ## R
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gjhltn/PlatformDemoBinder/HEAD?labpath=life-expectancy-r.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gjhltn/PlatformDemoBinder/HEAD?labpath=life-expectancy-r.ipynb&urlpath=rstudio)
 
 # Hair colour dataset
 
